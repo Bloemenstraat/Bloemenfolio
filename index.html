@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" href="./media/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Embedded and Web Portfolio</title>
+</head>
+
+<body>
+
+    <div id="goup" ></div>
+    <div id="copied">Email copied !</div>
+
+    <nav>
+        <img src="./media/favicon.png" />
+
+        <div class="links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="content">
+            <div class="info">
+                <div class="text">
+                    <h1>Welcome to my portfolio</h1>
+                    <p>
+                        Welcome! I'm a Fullstack MERN developer with a background 
+                        in electronics engineering. While I've always had a strong passion 
+                        for engineering, I found my true love in programming. 
+                        I believe it's the perfect playground for creativity, 
+                        where the only limits are the ones we set ourselves. 
+                        I'm excited to share my journey with you, where I combine my love
+                        for hardware and software to craft innovative solutions 
+                        that blend the precision of engineering with the endless 
+                        possibilities of coding.
+                    </p>
+                </div>
+                <div class="socials">
+                    <a href="https://github.com/Bloemenstraat"><img src="./media/socials/github.svg" /></a>
+                    <a href="https://www.linkedin.com/in/riad-regguem-617bab235/"><img src="./media/socials/linkedin.svg" /></a>
+                </div>
+            </div>
+
+            <div class="photo"></div>
+
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <header>
+            <div class="badge">
+                About
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="photo"></div>
+
+            <div class="info">
+                <h2>Get to know me</h2>
+                <p>
+                    My journey began with a fascination for electronics engineering, 
+                    which laid the foundation for my adventure in the tech world. 
+                    Along the way, I stumbled upon a true passion for programming, 
+                    and it was like finding the missing piece of the puzzle.
+                    As a full-stack freelance developer, I honed my skills and embraced 
+                    the creative side of coding. My journey then took me to Scotland, where 
+                    I embarked on a thrilling chapter by pursuing a Master's degree 
+                    in Mechatronics, adding a new layer of expertise to my toolkit.
+
+                </p>
+                <p>
+                    Now, after this incredible adventure, I'm back and ready to offer my skills
+                    in web development, bringing together the best of both worlds - 
+                    electronics and programming.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <div class="skills-content">
+            <header>
+                <div class="badge">
+                    Skills
+                </div>
+            </header>
+
+            <div class="selector">
+                <span id="dev" onclick="switchSkills(event)" class="selected">Web dev</span>
+                <span id="ml" onclick="switchSkills(event)" >Machine learning</span>
+                <span id="eln" onclick="switchSkills(event)" >Electronics</span>
+            </div>
+
+            <div class="list">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="education" id="education">
+        <header>
+            <div class="badge">
+                Education
+            </div>
+        </header>
+
+        <div class="educontent">
+            <div class="educard">
+                <img src="./media/strathclyde.svg" >
+                <div class="content">
+                    <h3>Master in Mechatronics and Automation</h3>
+                    <ul>
+                        <li>Enhanced my understanding of electronics by integrating mechanical principles.</li>
+                        <li>Gained practical experience in embedded development using STM32 microcontrollers.</li>
+                        <li>Enrolled in the MEMS (Micro-Electro-Mechanical Systems) manufacturing technologies course.</li>
+                        <li>Completed an internship focused on the design, control and simulation aspects of a pick-and-place robot.</li>
+                        <li>Executed a final-year project involving a drone controlled through hand gestures using computer vision technology.</li>
+                        <li>Took part in the European Rover Challenge as a member of the Roboclyde team.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="educard">
+                <img src="./media/usthb.png" >
+                <div class="content">
+                    <h3>Bachelor in Electronics and Automation</h3>
+                    <ul>
+                        <li>Acquired expertise in both digital and analog design principles.</li>
+                        <li>Gained hands-on experience in embedded development utilizing PIC microcontrollers.</li>
+                        <li>Completed a capstone project during the final year, focusing on the design and implementation of a six-axis robotic arm.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="work" id="work">
+        <header>
+            <div class="badge">
+                Work
+            </div>
+        </header>
+
+        <div class="workard-list">
+
+            <div class="workard">
+                <div class="workard-image"> 
+                    <img src="./media/projects/deleto.jpg" />
+                </div>
+                <div class="workard-content">
+                    <h4>Mmmm - Recipe maker</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum 
+                        primis in faucibus orci luctus et ultrices posuere cubilia curae.
+                        <a href="https://github.com/Bloemenstraat/deleto">Go to the project's GitHub repo</a>
+                    </p>
+                    
+                    <div class="techs-used">
+                        <span>React</span>
+                        <span>Express.js</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Typescript</span>
+                        <span>ChatGPT</span>
+                        <span>Stripe</span>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="workard">
+                <div class="workard-image"> 
+                    <img src="./media/projects/deleto.jpg" />
+                </div>
+                <div class="workard-content">
+                    <h4>Delete Web Browser</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum 
+                        primis in faucibus orci luctus et ultrices posuere cubilia curae.
+                        <a href="https://github.com/Bloemenstraat/deleto">Go to the project's GitHub repo</a>
+                    </p>
+                    
+                    <div class="techs-used">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Javascript</span>
+                        <span>Chrome API</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workard">
+                <div class="workard-image"> 
+                    <img src="./media/projects/echobot.png" />
+                </div>
+                <div class="workard-content">
+                    <h4>Echobot Dashboard</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum 
+                        primis in faucibus orci luctus et ultrices posuere cubilia curae.
+                        <a href="https://github.com/Bloemenstraat/deleto">Go to the project's GitHub repo</a>
+                    </p>
+                    
+                    <div class="techs-used">
+                        <span>React</span>
+                        <span>Express.js</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Typescript</span>
+                        <span>AWS Lambda</span>
+                        <span>Kubernetes</span>
+                        <span>EKS</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="workard">
+                <div class="workard-content">
+                    <h4>Hand gesture controlled drone simulation</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum 
+                        primis in faucibus orci luctus et ultrices posuere cubilia curae.
+                    </p>
+                    <div class="techs-used">
+                        <span>Python</span>
+                        <span>CoppeliaSim</span>
+                        <span>OpenCV</span>
+                        <span>Tensorflow</span>
+                        <span>Robotics</span>
+                    </div>
+                </div>
+                <div class="workard-image"> 
+                    <img src="./media/projects/simulation.png" />
+                </div>
+            </div>
+
+
+            <div class="workard">
+                <div class="workard-image"> 
+                    <img src="./media/usthb.png" />
+                </div>
+                <div class="workard-content">
+                    <h4>Morse code translator</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum 
+                        primis in faucibus orci luctus et ultrices posuere cubilia curae.
+                    </p>
+                    <div class="techs-used">
+                        <span>C</span>
+                        <span>STM32 "BlackPill"</span>
+                        <span>STM32CubeIDE</span>
+                        <span>Embedded programming</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <header>
+            <div class="badge">
+                Contact
+            </div>
+        </header>
+
+        <div class="content">
+            <p>
+                What’s next? Feel free to reach out to me 
+                if you're looking for a developer, have a query,
+                 or simply want to connect.
+            </p>
+
+            <div class="email">
+                <img src="./media/socials/email.svg" />
+                <h2>riad.regguem@gmail.com</h2>
+                <img src="./media/socials/copy.svg" id="copymail" />
+            </div>
+
+            <p>
+                Or your can find me on one of these platforms
+            </p>
+
+            <div class="socials">
+                <a href="https://github.com/Bloemenstraat"><img src="./media/socials/github.svg" /></a>
+                <a href="https://www.linkedin.com/in/riad-regguem-617bab235/"><img src="./media/socials/linkedin.svg" /></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            © 2023 | Developed in pure HTML/CSS/JS by Bloemenstraat (Me)
+        </p>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="index.js"></script>
+    
+</body>
+</html>

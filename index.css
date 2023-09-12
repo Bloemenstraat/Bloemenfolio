@@ -1,0 +1,425 @@
+* {
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    background-color: #030712;
+    color: #D1D5DB;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    color: #D1D5DB;
+    text-decoration: none;
+}
+
+a:hover {
+    color: grey;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    margin-bottom: 0.5em;
+    font-style: italic;
+}
+
+h3 {
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin: 1em 0;
+    letter-spacing: 0em;
+    line-height: 1.6em;
+}
+
+nav {
+    background-color: #030712;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 1.5em;
+}
+
+nav img {
+    width: 32px;
+    height: 32px;
+}
+
+nav .links {
+    display: flex;
+    gap: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge {
+    background-color: #374151;
+    border-radius: 12px;
+    padding: 0.3em 2em;
+    margin: 1em 0;
+    pointer-events: none;
+
+}
+
+.socials {
+    display: flex;
+    gap: 12px;
+}
+
+.socials img {
+    width: 35px;    
+}
+
+#goup {
+    width: 50px;
+    height: 50px;
+    background-color: #374151;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    opacity: 0;
+    box-shadow: 3px 3px 30px black;
+    background-image: url('./media/socials/goup.svg');
+    background-size: contain;
+}
+
+#copied {
+    background-color: #374151;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.6em 2em;
+    border-radius: 20px;
+    box-shadow: 3px 3px 30px black;
+    display: none;
+    z-index: 99;
+}
+
+
+/*###########################################"*/
+/*-----------      HERO     ------------------*/
+/*###########################################"*/
+
+.hero {
+    background-color: #030712;
+    width: 100%;
+}
+
+.hero .content {
+    display: flex;
+    padding: 6em 5em;
+    
+}
+
+.hero .content .info {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;    
+}
+
+.hero .content .info .text {
+    width: 70%;
+    
+}
+
+.hero .content .photo {
+    width: 20%;
+    height: auto;
+    background-color: red;   
+}
+
+/*###########################################"*/
+/*-----------      ABOUT     -----------------*/
+/*###########################################"*/
+
+.about {
+    background-color: #111827;
+    width: 100%;
+    padding: 1em 3em;
+}
+
+.about .content {
+    display: flex;
+    margin: 5em 0;
+}
+
+.about .content .photo {
+    width: 50%;
+    margin: 3em;
+    background-color: red;
+
+}
+
+.about .content .info {
+    width: 50%;
+    
+}
+
+/*###########################################"*/
+/*-----------      SKILLS     -----------------*/
+/*###########################################"*/
+
+.skills {
+    background-color: #030712;
+    
+    transition: height 0.3s ease;
+}
+
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.expanded {
+    height: auto;
+}
+
+.skills .list {
+    width: 60%;
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 50px;
+}
+
+.skills .list img {
+    width: 100%;
+}
+
+.skill-card {
+    width: 10%;
+}
+
+.skill-card p {
+    text-align: center;
+}
+
+.selector {
+    margin-top: 5em;
+    width: max-content;
+    height: max-content;
+    background-color: #1F2937;    
+    border-radius: 3vmin;
+    color: black;
+    display: flex;
+    /*justify-content: space-between;*/
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.selector span {
+    padding: 0.3em 4.5em;
+    color: white;
+    font-weight: bold;
+}
+
+.selector span:hover {
+    background-color: #374151;
+}
+
+.selected {
+    background-color: #374151;
+}
+
+/*###########################################"*/
+/*-----------      EDUCATION     -----------------*/
+/*###########################################"*/
+
+.education {
+    background-color: #111827;
+    padding-bottom: 10em;
+}
+
+.educontent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 5em;
+}
+
+.educard {
+    width: 80%;
+    padding: 2em 2em;
+    border-radius: 12px;
+    background-color: #1F2937;
+    box-shadow: 5px 5px 10px black;
+    display: flex;
+    gap: 50px;
+}
+
+.educard img {
+    width: 30%;
+    object-fit: contain;
+}
+
+.educard .content {
+    width: 70%;
+
+}
+
+.educard ul {
+    list-style-position: inside;
+}
+
+.educard li {
+    margin-bottom: 10px;
+    text-indent:-20px; 
+}
+
+/*###########################################"*/
+/*-----------      WORK     -----------------*/
+/*###########################################"*/
+
+.work {
+    background-color: #030712;
+    overflow: hidden;
+}
+
+.workard-list {
+
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    margin: 5em 0;
+}
+
+.workard {
+    height: 60vh;
+    width: 80%;
+    display: flex;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.workard-image {
+    width: 50%;
+    background-color: #374151;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.workard-image img {
+    background-color: white;
+    height: 80%;
+    width: 85%;
+    border-radius: 12px;
+}
+
+.workard-content {
+    width: 50%;
+    background-color: #1F2937;
+    padding: 2em;
+}
+
+.workard-content a {
+    color: #0377fc;
+    margin-bottom: 150px;
+}
+
+.workard-content a:after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('./media/socials/external.svg') no-repeat center center;
+    background-size: cover;
+    margin-left: 5px; 
+    color: red;
+    vertical-align: middle;
+  }
+
+
+
+.techs-used {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5px 5px;
+}
+
+.techs-used span {
+    background-color: #374151;
+    padding: 5px 15px;
+    border-radius: 24px;
+    pointer-events: none;
+}
+
+/*###########################################"*/
+/*-----------      CONTACT     -----------------*/
+/*###########################################"*/
+
+.contact {
+    background-color: #111827;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact .content .email {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.contact .content .email img {
+    width: 50px;
+}
+
+#copymail {
+    width: 25px;
+    cursor: pointer;
+    margin-left: -22px;
+}
+
+
+/*###########################################"*/
+/*-----------      FOOTER     -----------------*/
+/*###########################################"*/
+
+footer {
+    background-color: #030712;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

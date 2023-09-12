@@ -1,0 +1,31 @@
+EDUCATION:
+--- USTHB -----
+- Acquired expertise in both digital and analog design principles.
+- Gained hands-on experience in embedded development utilizing PIC microcontrollers.
+- Completed a capstone project during the final year, focusing on the design and implementation of a six-axis robotic arm.
+
+
+--- STRATH -----
+- Enhanced my understanding of electronics by integrating mechanical principles.
+- Gained practical experience in embedded development using STM32 microcontrollers.
+- Enrolled in the MEMS (Micro-Electro-Mechanical Systems) manufacturing technologies course.
+- Completed an internship focused on the design, control and simulation aspects of a pick-and-place robot.
+- Executed a final-year project involving a drone controlled through hand gestures using computer vision technology.
+- Took part in the European Rover Challenge as a member of the Roboclyde team.
+
+_______________________________________________________________________________
+
+ABOUT:
+
+- Started by studying electronics engineering
+- Discovered a passion for programming
+- Worked as a fullstack freelance developer 
+- went to scotland to complete a masters degree in mechatronics
+- After this adventure, I'm now available to offer my skills for web development
+
+_______________________________________________________________________________
+
+HERO :
+
+- Fullstack MERN developer with a background in electronics engineering. Passion for engineering 
+but mainly programming since it allows for creativity with little limits.
