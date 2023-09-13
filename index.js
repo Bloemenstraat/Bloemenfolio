@@ -52,27 +52,27 @@ async function displaySkills(arr) {
     if (firstLoad) {
         await new Promise(r => setTimeout(r, 2000));
         firstLoad = false;
+    
+        // Calculate and set the new height
+        const content = document.getElementsByClassName('skills-content')[0]
+        const container = document.getElementById('skills')
+
+        const computedStyle = getComputedStyle(content);
+
+        // Calculate the total height including padding and margin
+        const totalHeight = 
+        parseFloat(computedStyle.height) +
+        parseFloat(computedStyle.paddingTop) +
+        parseFloat(computedStyle.paddingBottom) +
+        parseFloat(computedStyle.marginTop) +
+        parseFloat(computedStyle.marginBottom);
+
+        container.style.height = `${totalHeight}px`;
+
+        // Trigger a reflow to apply the new height smoothly
+        container.offsetHeight;
+        container.classList.add("expanded");
     }
-     // Calculate and set the new height
-     const content = document.getElementsByClassName('skills-content')[0]
-     const container = document.getElementById('skills')
-     
-     const computedStyle = getComputedStyle(content);
-
-    // Calculate the total height including padding and margin
-    const totalHeight = 
-    parseFloat(computedStyle.height) +
-    parseFloat(computedStyle.paddingTop) +
-    parseFloat(computedStyle.paddingBottom) +
-    parseFloat(computedStyle.marginTop) +
-    parseFloat(computedStyle.marginBottom);
-
-    console.log("Total height including padding and margin:", totalHeight);
-     container.style.height = `${totalHeight}px`;
-
-     // Trigger a reflow to apply the new height smoothly
-     container.offsetHeight;
-     container.classList.add("expanded");
 
 }
 

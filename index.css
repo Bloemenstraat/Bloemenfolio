@@ -35,8 +35,8 @@ h2 {
 }
 
 h3 {
-    margin-bottom: 0.5em;
-    font-style: italic;
+    font-size: 1.5em;
+    /*font-style: italic;*/
 }
 
 h3 {
@@ -148,9 +148,11 @@ header {
 }
 
 .hero .content .photo {
-    width: 20%;
+    width: 30%;
     height: auto;
-    background-color: red;   
+    background-image: url('./media/hero.jpg');
+    background-size: cover;
+    border-radius: 6px;
 }
 
 /*###########################################"*/
@@ -171,13 +173,14 @@ header {
 .about .content .photo {
     width: 50%;
     margin: 3em;
-    background-color: red;
-
+    background-image: url('./media/about.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
 }
 
 .about .content .info {
     width: 50%;
-    
 }
 
 /*###########################################"*/
@@ -185,8 +188,7 @@ header {
 /*###########################################"*/
 
 .skills {
-    background-color: #030712;
-    
+    background-color: #030712;    
     transition: height 0.3s ease;
 }
 
@@ -284,7 +286,9 @@ header {
 
 .educard .content {
     width: 70%;
-
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .educard ul {
@@ -330,7 +334,7 @@ header {
     justify-content: center;
 }
 
-.workard-image img {
+.workard-image img, .workard-image video {
     background-color: white;
     height: 80%;
     width: 85%;

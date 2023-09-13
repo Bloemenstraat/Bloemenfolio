@@ -81,10 +81,9 @@
 
                 </p>
                 <p>
-                    Now, after this incredible adventure, I'm back and ready to offer my skills
-                    in web development, bringing together the best of both worlds - 
-                    electronics and programming.
-
+                    Now, after this adventure, I strongly believe that web development made me 
+                    a better mechatronics engineer, and vice-versa, and I strongly believe my 
+                    multidisciplinary background will be a great asset.
                 </p>
             </div>
         </div>
@@ -159,15 +158,14 @@
 
             <div class="workard">
                 <div class="workard-image"> 
-                    <img src="./media/projects/deleto.jpg" />
+                    <img src="./media/projects/mmmm.png" />
                 </div>
                 <div class="workard-content">
                     <h4>Mmmm - Recipe maker</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum 
-                        primis in faucibus orci luctus et ultrices posuere cubilia curae.
-                        <a href="https://github.com/Bloemenstraat/deleto">Go to the project's GitHub repo</a>
+                        This website allow you to discuss your dietary preferences with a chefbot (backed by ChatGPT) 
+                        who then creates a weekly meal plan for you. Images for the recipes are generated using DALL-E.
+                        <a href="https://bloemmmm-client.vercel.app/">Try it out !</a>
                     </p>
                     
                     <div class="techs-used">
@@ -177,6 +175,7 @@
                         <span>MongoDB</span>
                         <span>Typescript</span>
                         <span>ChatGPT</span>
+                        <span>DALL-E</span>
                         <span>Stripe</span>
                     </div>
                 </div>
@@ -184,16 +183,17 @@
             
 
             <div class="workard">
-                <div class="workard-image"> 
-                    <img src="./media/projects/deleto.jpg" />
-                </div>
+                
                 <div class="workard-content">
-                    <h4>Delete Web Browser</h4>
+                    <h4>Deleto Web Browser</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum 
-                        primis in faucibus orci luctus et ultrices posuere cubilia curae.
-                        <a href="https://github.com/Bloemenstraat/deleto">Go to the project's GitHub repo</a>
+                        A Chrome extension that allows users to fine-tune the deletion of their 
+                        browser history based on keywords, date ranges, etc. It also has multiple 
+                        features such as silent deletion and periodic deletion. 
+                        <a href="https://chrome.google.com/webstore/detail/deleto-browsers-cleaner-m/icimdljbeenohhkgciplehgpjeegalpn">
+                            Get the extension on Chrome store
+                        </a> Or 
+                        <a href="https://github.com/Bloemenstraat/deleto">go to the project's GitHub repo</a>
                     </p>
                     
                     <div class="techs-used">
@@ -202,6 +202,9 @@
                         <span>Javascript</span>
                         <span>Chrome API</span>
                     </div>
+                </div>
+                <div class="workard-image"> 
+                    <img src="./media/projects/deleto.jpg" />
                 </div>
             </div>
 
@@ -212,10 +215,10 @@
                 <div class="workard-content">
                     <h4>Echobot Dashboard</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum 
-                        primis in faucibus orci luctus et ultrices posuere cubilia curae.
-                        <a href="https://github.com/Bloemenstraat/deleto">Go to the project's GitHub repo</a>
+                        Echobot is a bot for Discord servers and Telegram channels. This dashboard helps 
+                        users customize their bots then automate its deployment on a Kubernetes cluster for 
+                        redundancy and high availability.
+                        <b>Coming soon !</b>
                     </p>
                     
                     <div class="techs-used">
@@ -227,6 +230,7 @@
                         <span>AWS Lambda</span>
                         <span>Kubernetes</span>
                         <span>EKS</span>
+                        <span>EFS</span>
                     </div>
                 </div>
             </div>
@@ -235,9 +239,11 @@
                 <div class="workard-content">
                     <h4>Hand gesture controlled drone simulation</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum 
-                        primis in faucibus orci luctus et ultrices posuere cubilia curae.
+                        First part of my final year project. A simulation to test a vision system 
+                        that detects hand gestures and converts them to directions for drone control.
+                        This simulation was used as a baseline before buiding the actual drone and 
+                        integrating the whole system. 
+                        <a href="https://github.com/Bloemenstraat/CoppeliaSim-Drone-Control">GitHub repository here.</a> 
                     </p>
                     <div class="techs-used">
                         <span>Python</span>
@@ -255,18 +261,24 @@
 
             <div class="workard">
                 <div class="workard-image"> 
-                    <img src="./media/usthb.png" />
+                    <video controls 
+                    src="./media/projects/morse.mp4" >
+                        
+                    </video>
+                    <!--<img src="./media/usthb.png" />-->
                 </div>
                 <div class="workard-content">
                     <h4>Morse code translator</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum 
-                        primis in faucibus orci luctus et ultrices posuere cubilia curae.
+                        One push button. One LCD 16x2. You tap your morse message with the button 
+                        (short push for a dot, long push for a dash), and the LCD displays it. 
+                        Also, a few LED to guide you, for example if the code you entered is 
+                        invalid, or if you took too long to enter a message. 
+                        <a href="https://github.com/Bloemenstraat/STM32-Telegraph">More on the GitHub repo.</a>
                     </p>
                     <div class="techs-used">
                         <span>C</span>
-                        <span>STM32 "BlackPill"</span>
+                        <span>STM32F411CEU6</span>
                         <span>STM32CubeIDE</span>
                         <span>Embedded programming</span>
                     </div>
@@ -311,7 +323,7 @@
 
     <footer>
         <p>
-            © 2023 | Developed in pure HTML/CSS/JS by Bloemenstraat (Me)
+            © 2023 | Developed in vanilla HTML/CSS/JS by Bloemenstraat (Me)
         </p>
     </footer>
 
