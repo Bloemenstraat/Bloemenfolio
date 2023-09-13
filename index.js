@@ -1,3 +1,5 @@
+// TODO : compress images 
+
 function setClipboard(text) {
     const type = "text/plain";
     const blob = new Blob([text], { type });
@@ -50,7 +52,7 @@ async function displaySkills(arr) {
 
     // TODO : Bug with the web dev height animation
     if (firstLoad) {
-        await new Promise(r => setTimeout(r, 2000));
+        await new Promise(r => setTimeout(r, 4000));
         firstLoad = false;
     
         // Calculate and set the new height
